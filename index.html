@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce - Universidad</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" aria-label="Ir al inicio">
+                <img src="" alt="Logo de la tienda" />
+            </a>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div>
+                <a href="#" aria-label="Buscar productos">
+                    <svg aria-hidden="true"><use href="#icon-search"></use></svg>
+                </a>
+                <a href="#" aria-label="Ver carrito de compras">
+                    <svg aria-hidden="true"><use href="#icon-cart"></use></svg>
+                    <span>0</span>
+                </a>
+                <a href="#" aria-label="Iniciar sesión">Ingresar</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <section aria-labelledby="filtros-titulo">
+                <h2 id="filtros-titulo">Filtros</h2>
+                <form>
+                    <fieldset>
+                        <legend>Categorías</legend>
+                        <label><input type="checkbox" name="categoria" value="electronica"> Electrónica</label>
+                        <label><input type="checkbox" name="categoria" value="ropa"> Ropa</label>
+                        <label><input type="checkbox" name="categoria" value="hogar"> Hogar</label>
+                        <label><input type="checkbox" name="categoria" value="deportes"> Deportes</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Rango de precio</legend>
+                        <label><input type="radio" name="precio" value="0-50"> $0 - $50</label>
+                        <label><input type="radio" name="precio" value="50-100"> $50 - $100</label>
+                        <label><input type="radio" name="precio" value="100-200"> $100 - $200</label>
+                        <label><input type="radio" name="precio" value="200+"> $200+</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Marca</legend>
+                        <label><input type="checkbox" name="marca" value="marca1"> Marca 1</label>
+                        <label><input type="checkbox" name="marca" value="marca2"> Marca 2</label>
+                        <label><input type="checkbox" name="marca" value="marca3"> Marca 3</label>
+                    </fieldset>
+                    <button type="submit">Aplicar filtros</button>
+                    <button type="reset">Limpiar</button>
+                </form>
+            </section>
+        </aside>
+
+        <section aria-labelledby="productos-titulo">
+            <h1 id="productos-titulo">Productos Destacados</h1>
+            <div>
+                <article>
+                    <img src="" alt="Producto 1" />
+                    <h2>Producto 1</h2>
+                    <p>Descripción breve del producto 1</p>
+                    <span>$99.99</span>
+                    <button type="button">Agregar al carrito</button>
+                </article>
+                <article>
+                    <img src="" alt="Producto 2" />
+                    <h2>Producto 2</h2>
+                    <p>Descripción breve del producto 2</p>
+                    <span>$149.99</span>
+                    <button type="button">Agregar al carrito</button>
+                </article>
+                <article>
+                    <img src="" alt="Producto 3" />
+                    <h2>Producto 3</h2>
+                    <p>Descripción breve del producto 3</p>
+                    <span>$79.99</span>
+                    <button type="button">Agregar al carrito</button>
+                </article>
+                <article>
+                    <img src="" alt="Producto 4" />
+                    <h2>Producto 4</h2>
+                    <p>Descripción breve del producto 4</p>
+                    <span>$199.99</span>
+                    <button type="button">Agregar al carrito</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <h2>Información</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Envíos y devoluciones</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section>
+            <h2>Atención al cliente</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Rastrear pedido</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section>
+            <h2>Síguenos</h2>
+            <ul>
+                <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                <li><a href="#" aria-label="Twitter">Twitter</a></li>
+            </ul>
+        </section>
+        <p>&copy; 2026 Ecommerce Universidad. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

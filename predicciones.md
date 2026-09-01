@@ -1,0 +1,2 @@
+Predicciones
+1- Voy a crear el esqueleto basico de HTML para el index.html, con etiquetas semanticas para la vista principal de la web, encabezado, seccion principal, productos destacados, filtros y footer.

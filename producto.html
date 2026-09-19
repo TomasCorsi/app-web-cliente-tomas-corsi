@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto - Ecommerce Universidad</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" aria-label="Ir al inicio">
+                <img src="" alt="Logo de la tienda" />
+            </a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#productos">Productos</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div>
+                <a href="#" aria-label="Buscar productos">
+                    <svg aria-hidden="true"><use href="#icon-search"></use></svg>
+                </a>
+                <a href="#" aria-label="Ver carrito de compras">
+                    <svg aria-hidden="true"><use href="#icon-cart"></use></svg>
+                    <span>0</span>
+                </a>
+                <a href="#" aria-label="Iniciar sesión">Ingresar</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="producto-titulo" class="producto-detalle">
+            <div class="producto-imagen">
+                <figure>
+                    <img src="" alt="Zapatillas deportivas negras" />
+                </figure>
+            </div>
+
+            <div class="producto-info">
+                <nav class="breadcrumb" aria-label="Ruta de navegación">
+                    <ol>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#productos">Productos</a></li>
+                        <li><a href="#">Deportes</a></li>
+                        <li aria-current="page">Zapatillas Runner Pro</li>
+                    </ol>
+                </nav>
+
+                <p class="producto-categoria">Calzado / Running</p>
+
+                <h1 id="producto-titulo">Zapatillas Runner Pro</h1>
+
+                <p class="producto-precio">$189.99</p>
+
+                <div class="producto-descripcion">
+                    <p>Diseñadas para corredores que buscan máximo rendimiento y comodidad. La tecnología de amortiguación reactiva proporciona una pisada suave y un retorno de energía excepcional en cada zancada.</p>
+                    <p>La parte superior de malla transpirable se adapta al pie como una segunda piel, mientras que la suela de goma de alta abrasión ofrece tracción duradera en superficies húmedas y secas.</p>
+                </div>
+
+                <fieldset class="producto-talles">
+                    <legend>Talle</legend>
+                    <div class="talles-opciones">
+                        <label>
+                            <input type="radio" name="talle" value="39" />
+                            <span>39</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="talle" value="40" />
+                            <span>40</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="talle" value="41" />
+                            <span>41</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="talle" value="42" />
+                            <span>42</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="talle" value="43" />
+                            <span>43</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="talle" value="44" />
+                            <span>44</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <button type="button" class="btn-agregar-carrito">Agregar al carrito</button>
+
+                <div class="producto-envio">
+                    <h3>Envío y devoluciones</h3>
+                    <ul>
+                        <li>Envío gratis en compras superiores a $100</li>
+                        <li>Entrega en 2-5 días hábiles</li>
+                        <li>Devoluciones gratuitas dentro de 30 días</li>
+                        <li>Cambio de talle sin cargo</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <h2>Información</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Envíos y devoluciones</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section>
+            <h2>Atención al cliente</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Rastrear pedido</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section>
+            <h2>Síguenos</h2>
+            <ul>
+                <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                <li><a href="#" aria-label="Twitter">Twitter</a></li>
+            </ul>
+        </section>
+        <p>&copy; 2026 Ecommerce Universidad. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

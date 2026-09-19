@@ -12,3 +12,8 @@ y CSS. La página mostrará la imagen del producto, nombre, categoría, precio,
 descripción, opciones de talle, información de envío y un botón para agregar
 al carrito. También voy a mantener el mismo encabezado, footer y estilo visual
 general de la tienda.
+
+4- Voy a crear la página del carrito de compras utilizando HTML semántico y CSS.
+La página mostrará los productos agregados, su imagen, nombre, talle, cantidad,
+precio, subtotal, resumen de compra y un botón para finalizar la compra.
+También voy a mantener el mismo encabezado, footer y estilo visual general de la tienda.

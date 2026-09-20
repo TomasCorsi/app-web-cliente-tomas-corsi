@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Ecommerce Universidad</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="marca" aria-label="Ir al inicio">MOVE</a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#productos">Productos</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div>
+                <a href="#" aria-label="Buscar productos">Buscar</a>
+                <a href="carrito.html" aria-current="page">Carrito <span>2</span></a>
+                <a href="#">Ingresar</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="carrito">
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
+            <ol>
+                <li><a href="index.html">Inicio</a></li>
+                <li aria-current="page">Carrito</li>
+            </ol>
+        </nav>
+
+        <div class="carrito-encabezado">
+            <h1>Tu carrito</h1>
+            <p>2 artículos</p>
+        </div>
+
+        <div class="carrito-layout">
+            <section class="carrito-productos" aria-labelledby="productos-carrito-titulo">
+                <h2 id="productos-carrito-titulo" class="visualmente-oculto">Productos en el carrito</h2>
+
+                <article class="carrito-item">
+                    <figure class="carrito-item-imagen">
+                        <img src="images/156174-800-800.webp" alt="Zapatillas Runner Pro blancas y negras">
+                    </figure>
+
+                    <div class="carrito-item-info">
+                        <p class="carrito-item-categoria">Calzado / Running</p>
+                        <h3>Zapatillas Runner Pro</h3>
+                        <dl class="carrito-item-detalles">
+                            <div>
+                                <dt>Talle</dt>
+                                <dd>42</dd>
+                            </div>
+                            <div>
+                                <dt>Color</dt>
+                                <dd>Blanco / Negro</dd>
+                            </div>
+                        </dl>
+
+                        <div class="carrito-item-acciones">
+                            <label for="cantidad-runner">Cantidad</label>
+                            <select id="cantidad-runner" name="cantidad-runner">
+                                <option selected>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                            <button type="button" class="carrito-eliminar">Eliminar</button>
+                        </div>
+                    </div>
+
+                    <p class="carrito-item-precio">$189.99</p>
+                </article>
+
+                <article class="carrito-item">
+                    <figure class="carrito-item-imagen">
+                        <img src="images/156174-800-800.webp" alt="Zapatillas Court Low blancas y negras">
+                    </figure>
+
+                    <div class="carrito-item-info">
+                        <p class="carrito-item-categoria">Calzado / Lifestyle</p>
+                        <h3>Zapatillas Court Low</h3>
+                        <dl class="carrito-item-detalles">
+                            <div>
+                                <dt>Talle</dt>
+                                <dd>41</dd>
+                            </div>
+                            <div>
+                                <dt>Color</dt>
+                                <dd>Blanco / Negro</dd>
+                            </div>
+                        </dl>
+
+                        <div class="carrito-item-acciones">
+                            <label for="cantidad-court">Cantidad</label>
+                            <select id="cantidad-court" name="cantidad-court">
+                                <option selected>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                            <button type="button" class="carrito-eliminar">Eliminar</button>
+                        </div>
+                    </div>
+
+                    <p class="carrito-item-precio">$149.99</p>
+                </article>
+            </section>
+
+            <aside class="carrito-resumen" aria-labelledby="resumen-titulo">
+                <h2 id="resumen-titulo">Resumen de compra</h2>
+
+                <dl class="carrito-totales">
+                    <div>
+                        <dt>Subtotal</dt>
+                        <dd>$339.98</dd>
+                    </div>
+                    <div>
+                        <dt>Envío</dt>
+                        <dd>Gratis</dd>
+                    </div>
+                    <div class="carrito-total">
+                        <dt>Total</dt>
+                        <dd>$339.98</dd>
+                    </div>
+                </dl>
+
+                <button type="button" class="carrito-finalizar">Finalizar compra</button>
+                <a href="index.html" class="carrito-seguir">Seguir comprando</a>
+
+                <p class="carrito-ayuda">Envíos y devoluciones gratuitas dentro de los 30 días.</p>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <section>
+            <h2>Información</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Envíos y devoluciones</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section>
+            <h2>Atención al cliente</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Rastrear pedido</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section>
+            <h2>Síguenos</h2>
+            <ul>
+                <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                <li><a href="#" aria-label="Twitter">Twitter</a></li>
+            </ul>
+        </section>
+        <p>&copy; 2026 Ecommerce Universidad. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

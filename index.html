@@ -3,106 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce - Universidad</title>
+    <title>MOVE | Indumentaria y calzado deportivo</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="pagina-catalogo">
     <header>
-        <nav>
-            <a href="#" aria-label="Ir al inicio">
-                <img src="" alt="Logo de la tienda" />
-            </a>
+        <nav aria-label="Navegación principal">
+            <a href="index.html" class="marca" aria-label="Ir al inicio">MOVE</a>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Categorías</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="index.html" aria-current="page">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#filtros">Categorías</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
             <div>
-                <a href="#" aria-label="Buscar productos">
-                    <svg aria-hidden="true"><use href="#icon-search"></use></svg>
-                </a>
-                <a href="#" aria-label="Ver carrito de compras">
-                    <svg aria-hidden="true"><use href="#icon-cart"></use></svg>
-                    <span>0</span>
-                </a>
-                <a href="#" aria-label="Iniciar sesión">Ingresar</a>
+                <a href="#productos">Buscar</a>
+                <a href="carrito.html">Carrito <span>2</span></a>
+                <a href="#">Ingresar</a>
             </div>
         </nav>
     </header>
 
-    <main>
-        <aside>
+    <main id="inicio" class="catalogo-layout">
+        <aside id="filtros" class="catalogo-filtros">
             <section aria-labelledby="filtros-titulo">
-                <h2 id="filtros-titulo">Filtros</h2>
+                <h2 id="filtros-titulo">Filtrar productos</h2>
                 <form>
                     <fieldset>
-                        <legend>Categorías</legend>
-                        <label><input type="checkbox" name="categoria" value="electronica"> Electrónica</label>
-                        <label><input type="checkbox" name="categoria" value="ropa"> Ropa</label>
-                        <label><input type="checkbox" name="categoria" value="hogar"> Hogar</label>
-                        <label><input type="checkbox" name="categoria" value="deportes"> Deportes</label>
+                        <legend>Categoría</legend>
+                        <label><input type="checkbox" name="categoria" value="zapatillas"> Zapatillas</label>
+                        <label><input type="checkbox" name="categoria" value="remeras"> Remeras</label>
+                        <label><input type="checkbox" name="categoria" value="buzos"> Buzos</label>
+                        <label><input type="checkbox" name="categoria" value="shorts"> Shorts</label>
+                        <label><input type="checkbox" name="categoria" value="accesorios"> Accesorios</label>
                     </fieldset>
                     <fieldset>
                         <legend>Rango de precio</legend>
-                        <label><input type="radio" name="precio" value="0-50"> $0 - $50</label>
-                        <label><input type="radio" name="precio" value="50-100"> $50 - $100</label>
-                        <label><input type="radio" name="precio" value="100-200"> $100 - $200</label>
-                        <label><input type="radio" name="precio" value="200+"> $200+</label>
+                        <label><input type="radio" name="precio" value="0-100"> Hasta $100</label>
+                        <label><input type="radio" name="precio" value="100-150"> $100 - $150</label>
+                        <label><input type="radio" name="precio" value="150-200"> $150 - $200</label>
+                        <label><input type="radio" name="precio" value="200+"> Más de $200</label>
                     </fieldset>
                     <fieldset>
-                        <legend>Marca</legend>
-                        <label><input type="checkbox" name="marca" value="marca1"> Marca 1</label>
-                        <label><input type="checkbox" name="marca" value="marca2"> Marca 2</label>
-                        <label><input type="checkbox" name="marca" value="marca3"> Marca 3</label>
+                        <legend>Colección</legend>
+                        <label><input type="checkbox" name="coleccion" value="running"> Running</label>
+                        <label><input type="checkbox" name="coleccion" value="training"> Training</label>
+                        <label><input type="checkbox" name="coleccion" value="futbol"> Fútbol</label>
+                        <label><input type="checkbox" name="coleccion" value="lifestyle"> Lifestyle</label>
                     </fieldset>
                     <button type="submit">Aplicar filtros</button>
-                    <button type="reset">Limpiar</button>
+                    <button type="reset">Limpiar filtros</button>
                 </form>
             </section>
         </aside>
 
-        <section aria-labelledby="productos-titulo">
-            <h1 id="productos-titulo">Productos Destacados</h1>
-            <div>
-                <article>
-                    <img src="" alt="Producto 1" />
-                    <h2>Producto 1</h2>
-                    <p>Descripción breve del producto 1</p>
-                    <span>$99.99</span>
-                    <button type="button">Agregar al carrito</button>
+        <section id="productos" class="catalogo-productos" aria-labelledby="productos-titulo">
+            <div class="catalogo-encabezado">
+                <div>
+                    <p class="catalogo-eyebrow">Nueva temporada</p>
+                    <h1 id="productos-titulo">Equipate para moverte</h1>
+                </div>
+                <p>8 productos</p>
+            </div>
+
+            <div class="catalogo-grid">
+                <article class="producto-card">
+                    <a href="producto.html" class="producto-card-imagen" aria-label="Ver Court Low Essential">
+                        <img src="images/156174-800-800.webp" alt="Zapatillas blancas Court Low Essential con detalles negros">
+                    </a>
+                    <div class="producto-card-contenido">
+                        <p class="producto-card-categoria">Zapatillas / Lifestyle</p>
+                        <h2><a href="producto.html">Court Low Essential</a></h2>
+                        <div class="producto-card-compra">
+                            <p class="producto-card-precio">$129.99</p>
+                            <a href="producto.html" class="producto-card-accion">Ver producto</a>
+                        </div>
+                    </div>
                 </article>
-                <article>
-                    <img src="" alt="Producto 2" />
-                    <h2>Producto 2</h2>
-                    <p>Descripción breve del producto 2</p>
-                    <span>$149.99</span>
-                    <button type="button">Agregar al carrito</button>
+
+                <article class="producto-card">
+                    <a href="producto.html" class="producto-card-imagen" aria-label="Ver Retro 12 Black Red">
+                        <img src="images/1851608-600-600.webp" alt="Zapatillas altas Retro 12 negras con detalles rojos">
+                    </a>
+                    <div class="producto-card-contenido">
+                        <p class="producto-card-categoria">Zapatillas / Básquet</p>
+                        <h2><a href="producto.html">Retro 12 Black Red</a></h2>
+                        <div class="producto-card-compra">
+                            <p class="producto-card-precio">$249.99</p>
+                            <a href="producto.html" class="producto-card-accion">Ver producto</a>
+                        </div>
+                    </div>
                 </article>
-                <article>
-                    <img src="" alt="Producto 3" />
-                    <h2>Producto 3</h2>
-                    <p>Descripción breve del producto 3</p>
-                    <span>$79.99</span>
-                    <button type="button">Agregar al carrito</button>
+
+                <article class="producto-card">
+                    <a href="producto.html" class="producto-card-imagen" aria-label="Ver Zoom Performance 6">
+                        <img src="images/1864876-600-600.webp" alt="Zapatillas Zoom Performance 6 grises y rojas">
+                    </a>
+                    <div class="producto-card-contenido">
+                        <p class="producto-card-categoria">Zapatillas / Performance</p>
+                        <h2><a href="producto.html">Zoom Performance 6</a></h2>
+                        <div class="producto-card-compra">
+                            <p class="producto-card-precio">$219.99</p>
+                            <a href="producto.html" class="producto-card-accion">Ver producto</a>
+                        </div>
+                    </div>
                 </article>
-                <article>
-                    <img src="" alt="Producto 4" />
-                    <h2>Producto 4</h2>
-                    <p>Descripción breve del producto 4</p>
-                    <span>$199.99</span>
-                    <button type="button">Agregar al carrito</button>
+
+                <article class="producto-card">
+                    <a href="producto.html" class="producto-card-imagen" aria-label="Ver Force Low Denim">
+                        <img src="images/1875036-600-600.webp" alt="Zapatillas Force Low Denim grises con detalles naranjas">
+                    </a>
+                    <div class="producto-card-contenido">
+                        <p class="producto-card-categoria">Zapatillas / Lifestyle</p>
+                        <h2><a href="producto.html">Force Low Denim</a></h2>
+                        <div class="producto-card-compra">
+                            <p class="producto-card-precio">$169.99</p>
+                            <a href="producto.html" class="producto-card-accion">Ver producto</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto-card">
+                    <a href="producto.html" class="producto-card-imagen" aria-label="Ver Camiseta Países Bajos Match">
+                        <img src="images/1731116-600-600.jpg" alt="Camiseta naranja Países Bajos Match">
+                    </a>
+                    <div class="producto-card-contenido">
+                        <p class="producto-card-categoria">Remeras / Fútbol</p>
+                        <h2><a href="producto.html">Camiseta Países Bajos Match</a></h2>
+                        <div class="producto-card-compra">
+                            <p class="producto-card-precio">$99.99</p>
+                            <a href="producto.html" class="producto-card-accion">Ver producto</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto-card">
+                    <a href="producto.html" class="producto-card-imagen" aria-label="Ver Camiseta Francia Dri-FIT">
+                        <img src="images/1732896-600-600.webp" alt="Camiseta Francia Dri-FIT color verde claro">
+                    </a>
+                    <div class="producto-card-contenido">
+                        <p class="producto-card-categoria">Remeras / Fútbol</p>
+                        <h2><a href="producto.html">Camiseta Francia Dri-FIT</a></h2>
+                        <div class="producto-card-compra">
+                            <p class="producto-card-precio">$94.99</p>
+                            <a href="producto.html" class="producto-card-accion">Ver producto</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto-card">
+                    <a href="producto.html" class="producto-card-imagen" aria-label="Ver Camiseta Racing Club 2026">
+                        <img src="images/1744656-600-600.webp" alt="Camiseta Racing Club 2026 celeste y blanca">
+                    </a>
+                    <div class="producto-card-contenido">
+                        <p class="producto-card-categoria">Remeras / Fútbol</p>
+                        <h2><a href="producto.html">Camiseta Racing Club 2026</a></h2>
+                        <div class="producto-card-compra">
+                            <p class="producto-card-precio">$89.99</p>
+                            <a href="producto.html" class="producto-card-accion">Ver producto</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto-card">
+                    <a href="producto.html" class="producto-card-imagen" aria-label="Ver Remera Brasil Performance">
+                        <img src="images/1799572-600-600.webp" alt="Remera Brasil Performance azul oscuro">
+                    </a>
+                    <div class="producto-card-contenido">
+                        <p class="producto-card-categoria">Remeras / Training</p>
+                        <h2><a href="producto.html">Remera Brasil Performance</a></h2>
+                        <div class="producto-card-compra">
+                            <p class="producto-card-precio">$84.99</p>
+                            <a href="producto.html" class="producto-card-accion">Ver producto</a>
+                        </div>
+                    </div>
                 </article>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer id="contacto">
         <section>
-            <h2>Información</h2>
-            <nav>
+            <h2>MOVE</h2>
+            <nav aria-label="Información de la tienda">
                 <ul>
-                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Nuestra historia</a></li>
                     <li><a href="#">Términos y condiciones</a></li>
                     <li><a href="#">Política de privacidad</a></li>
                     <li><a href="#">Envíos y devoluciones</a></li>
@@ -110,24 +195,25 @@
             </nav>
         </section>
         <section>
-            <h2>Atención al cliente</h2>
-            <nav>
+            <h2>Ayuda</h2>
+            <nav aria-label="Atención al cliente">
                 <ul>
                     <li><a href="#">Contacto</a></li>
                     <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Guía de talles</a></li>
                     <li><a href="#">Rastrear pedido</a></li>
                 </ul>
             </nav>
         </section>
         <section>
-            <h2>Síguenos</h2>
+            <h2>Seguinos</h2>
             <ul>
-                <li><a href="#" aria-label="Facebook">Facebook</a></li>
                 <li><a href="#" aria-label="Instagram">Instagram</a></li>
-                <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="X">X</a></li>
             </ul>
         </section>
-        <p>&copy; 2026 Ecommerce Universidad. Todos los derechos reservados.</p>
+        <p>&copy; 2026 MOVE. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

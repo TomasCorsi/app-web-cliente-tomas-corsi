@@ -79,150 +79,318 @@ nav svg {
     height: 24px;
 }
 
-main {
+main.catalogo-layout {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 1.5rem;
+    padding: 3rem 1.5rem 5rem;
     display: grid;
     grid-template-columns: 250px 1fr;
-    gap: 2rem;
+    gap: 3rem;
+    align-items: start;
 }
 
-aside {
+.catalogo-filtros {
     background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: none;
     height: fit-content;
 }
 
-aside h2 {
+.catalogo-filtros h2 {
     margin-bottom: 1.5rem;
     font-size: 1.25rem;
-    color: #333;
+    color: #111;
 }
 
-aside fieldset {
+.catalogo-filtros fieldset {
     border: none;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
     padding: 0;
 }
 
-aside legend {
+.catalogo-filtros legend {
     font-weight: 600;
     margin-bottom: 0.75rem;
-    color: #333;
+    color: #111;
 }
 
-aside label {
+.catalogo-filtros label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
     cursor: pointer;
     font-size: 0.9rem;
+    color: #555;
 }
 
-aside input[type="checkbox"],
-aside input[type="radio"] {
+.catalogo-filtros input[type="checkbox"],
+.catalogo-filtros input[type="radio"] {
     margin-right: 0.5rem;
+    accent-color: #111;
 }
 
-aside button {
+.catalogo-filtros button {
     width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 0.5rem;
-    border: none;
+    padding: 0.85rem 1rem;
+    margin-bottom: 0.65rem;
+    border: 1px solid #111;
     border-radius: 4px;
     cursor: pointer;
     font-size: 0.9rem;
-    transition: background-color 0.2s;
+    font-weight: 600;
+    transition: background-color 0.2s, color 0.2s;
 }
 
-aside button[type="submit"] {
-    background-color: #0066cc;
+.catalogo-filtros button[type="submit"] {
+    background-color: #111;
     color: #fff;
 }
 
-aside button[type="submit"]:hover {
-    background-color: #0052a3;
+.catalogo-filtros button[type="submit"]:hover,
+.catalogo-filtros button[type="submit"]:focus-visible {
+    background-color: #333;
 }
 
-aside button[type="reset"] {
-    background-color: #e0e0e0;
-    color: #333;
-}
-
-aside button[type="reset"]:hover {
-    background-color: #ccc;
-}
-
-section[aria-labelledby="productos-titulo"] h1 {
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-    color: #333;
-}
-
-section[aria-labelledby="productos-titulo"] > div {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
-}
-
-article {
+.catalogo-filtros button[type="reset"] {
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    color: #111;
+}
+
+.catalogo-filtros button[type="reset"]:hover,
+.catalogo-filtros button[type="reset"]:focus-visible {
+    background-color: #111;
+    color: #fff;
+}
+
+.catalogo-productos {
+    min-width: 0;
+}
+
+.catalogo-encabezado {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.catalogo-encabezado h1 {
+    color: #111;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+}
+
+.catalogo-encabezado > p {
+    color: #666;
+    white-space: nowrap;
+}
+
+.catalogo-eyebrow {
+    margin-bottom: 0.5rem;
+    color: #777;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 3rem 1.5rem;
+}
+
+.producto-card {
+    min-width: 0;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
-    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-article:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-article img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    background-color: #e0e0e0;
-}
-
-article h2 {
-    padding: 1rem 1rem 0.5rem;
-    font-size: 1.1rem;
-    color: #333;
-}
-
-article p {
-    padding: 0 1rem 0.5rem;
-    font-size: 0.9rem;
-    color: #666;
-    flex-grow: 1;
-}
-
-article span {
-    padding: 0 1rem 0.5rem;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #0066cc;
-}
-
-article button {
-    margin: 0 1rem 1rem;
-    padding: 0.75rem;
-    background-color: #0066cc;
-    color: #fff;
-    border: none;
+.producto-card-imagen {
+    display: block;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background-color: #eee;
     border-radius: 4px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: background-color 0.2s;
 }
 
-article button:hover {
-    background-color: #0052a3;
+.producto-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.25s ease;
+}
+
+.producto-card:hover img {
+    transform: scale(1.015);
+}
+
+.producto-card-contenido {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-top: 1.25rem;
+}
+
+.producto-card-categoria {
+    margin-bottom: 0.35rem;
+    color: #777;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.producto-card h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.producto-card h2 a {
+    color: #111;
+    text-decoration: none;
+}
+
+.producto-card h2 a:hover,
+.producto-card h2 a:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.producto-card-compra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: auto;
+    padding-top: 1.25rem;
+}
+
+.producto-card-precio {
+    color: #111;
+    font-size: 1.1rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.producto-card-accion {
+    padding: 0.65rem 0.85rem;
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #111;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.producto-card-accion:hover,
+.producto-card-accion:focus-visible {
+    background-color: #333;
+    border-color: #333;
+}
+
+.pagina-catalogo header nav a:hover,
+.pagina-catalogo header nav a:focus-visible {
+    color: #000;
+}
+
+.pagina-catalogo header a[aria-current="page"] {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.35em;
+}
+
+.pagina-catalogo a:focus-visible,
+.pagina-catalogo button:focus-visible,
+.pagina-catalogo input:focus-visible {
+    outline: 2px solid #111;
+    outline-offset: 3px;
+}
+
+#productos,
+#filtros,
+#contacto {
+    scroll-margin-top: 100px;
+}
+
+@media (max-width: 900px) {
+    main.catalogo-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 3rem;
+    }
+
+    .catalogo-filtros form {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0 2rem;
+    }
+
+    .catalogo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .pagina-catalogo header nav {
+        justify-content: center;
+    }
+
+    .pagina-catalogo header nav > ul {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 0.75rem 1.25rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    main.catalogo-layout {
+        padding: 2rem 1.25rem 3.5rem;
+    }
+
+    .catalogo-filtros form {
+        display: block;
+    }
+
+    .catalogo-encabezado {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .catalogo-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .pagina-catalogo header nav > div {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .producto-card-compra {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .producto-card-accion {
+        width: 100%;
+    }
 }
 
 footer {

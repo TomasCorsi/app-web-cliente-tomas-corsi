@@ -29,3 +29,9 @@ Voy a reorganizar la información para que sea más clara y alineada, agregando
 secciones de navegación, atención al cliente, contacto y redes sociales.
 También voy a mantener el mismo footer en index.html, producto.html y carrito.html
 para que toda la tienda tenga una estructura visual consistente.
+
+7- Voy a mejorar la página de detalle de producto utilizando HTML y CSS.
+Voy a reorganizar la información del producto, mejorar la jerarquía visual,
+dar mayor protagonismo a la imagen, ordenar la selección de talles, precio,
+descripción e información de envío, y mantener una estética moderna,
+minimalista y coherente con el resto de la tienda.

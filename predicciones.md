@@ -23,3 +23,9 @@ Voy a reemplazar el contenido genérico por productos deportivos reales,
 adaptar las categorías y filtros al tipo de tienda, mejorar la grilla de
 productos y mantener una estética moderna, minimalista y coherente con
 las páginas de producto y carrito.
+
+6- Voy a mejorar el footer general de la tienda utilizando HTML semántico y CSS.
+Voy a reorganizar la información para que sea más clara y alineada, agregando
+secciones de navegación, atención al cliente, contacto y redes sociales.
+También voy a mantener el mismo footer en index.html, producto.html y carrito.html
+para que toda la tienda tenga una estructura visual consistente.

@@ -393,72 +393,131 @@ main.catalogo-layout {
     }
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 3rem 1.5rem 1.5rem;
+.site-footer {
     margin-top: 3rem;
+    padding: 4.5rem 1.5rem 0;
+    color: #f5f5f5;
+    background-color: #0d0d0d;
 }
 
-footer > section {
-    max-width: 1200px;
-    margin: 0 auto;
+.footer-contenido {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-footer h2 {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    color: #fff;
-}
-
-footer nav ul {
-    list-style: none;
-}
-
-footer nav li {
-    margin-bottom: 0.5rem;
-}
-
-footer nav a {
-    color: #ccc;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.2s;
-}
-
-footer nav a:hover {
-    color: #fff;
-}
-
-footer > section:last-of-type ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
-footer > section:last-of-type a {
-    color: #ccc;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.2s;
-}
-
-footer > section:last-of-type a:hover {
-    color: #fff;
-}
-
-footer > p {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(2rem, 5vw, 4.5rem);
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 1.5rem;
-    border-top: 1px solid #444;
-    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.footer-columna {
+    min-width: 0;
+}
+
+.footer-columna h2 {
+    margin-bottom: 1.25rem;
+    color: #fff;
     font-size: 0.85rem;
-    color: #999;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.site-footer nav {
+    display: block;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-footer ul {
+    display: block;
+    list-style: none;
+}
+
+.site-footer li + li {
+    margin-top: 0.75rem;
+}
+
+.site-footer a {
+    color: #bdbdbd;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+    color: #fff;
+}
+
+.site-footer a:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+}
+
+.footer-contacto address {
+    color: #bdbdbd;
+    font-size: 0.92rem;
+    font-style: normal;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.footer-contacto p + p {
+    margin-top: 0.85rem;
+}
+
+.footer-contacto strong {
+    display: block;
+    margin-bottom: 0.15rem;
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.footer-inferior {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    border-top: 1px solid #2b2b2b;
+}
+
+.footer-inferior p {
+    color: #888;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .footer-contenido {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 3rem 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .site-footer {
+        padding: 3.5rem 1.25rem 0;
+    }
+
+    .footer-contenido {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2.75rem;
+        padding-bottom: 3rem;
+    }
+
+    .footer-inferior {
+        padding: 1.25rem 0;
+    }
+
+    .footer-inferior p {
+        text-align: left;
+    }
 }
 
 .producto-detalle {

@@ -17,3 +17,9 @@ general de la tienda.
 La página mostrará los productos agregados, su imagen, nombre, talle, cantidad,
 precio, subtotal, resumen de compra y un botón para finalizar la compra.
 También voy a mantener el mismo encabezado, footer y estilo visual general de la tienda.
+
+5- Voy a mejorar la página principal de la tienda utilizando HTML y CSS.
+Voy a reemplazar el contenido genérico por productos deportivos reales,
+adaptar las categorías y filtros al tipo de tienda, mejorar la grilla de
+productos y mantener una estética moderna, minimalista y coherente con
+las páginas de producto y carrito.

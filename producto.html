@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto - Ecommerce Universidad</title>
+    <title>Court Low Essential | MOVE</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="producto-body">
     <header>
         <nav>
-            <a href="index.html" aria-label="Ir al inicio">
-                <img src="" alt="Logo de la tienda" />
-            </a>
+            <a href="index.html" class="marca" aria-label="Ir al inicio">MOVE</a>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="index.html#productos">Productos</a></li>
@@ -31,76 +29,106 @@
         </nav>
     </header>
 
-    <main>
-        <section aria-labelledby="producto-titulo" class="producto-detalle">
-            <div class="producto-imagen">
-                <figure>
-                    <img src="" alt="Zapatillas deportivas negras" />
-                </figure>
-            </div>
+    <main class="pagina-producto">
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
+            <ol>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#productos">Productos</a></li>
+                <li><a href="index.html#filtros">Zapatillas</a></li>
+                <li aria-current="page">Court Low Essential</li>
+            </ol>
+        </nav>
+
+        <section class="producto-principal" aria-labelledby="producto-titulo">
+            <figure class="producto-imagen">
+                <img src="images/156174-800-800.webp" alt="Zapatillas Court Low Essential blancas con detalles negros">
+            </figure>
 
             <div class="producto-info">
-                <nav class="breadcrumb" aria-label="Ruta de navegación">
-                    <ol>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="index.html#productos">Productos</a></li>
-                        <li><a href="#">Deportes</a></li>
-                        <li aria-current="page">Zapatillas Runner Pro</li>
-                    </ol>
-                </nav>
-
-                <p class="producto-categoria">Calzado / Running</p>
-
-                <h1 id="producto-titulo">Zapatillas Runner Pro</h1>
-
-                <p class="producto-precio">$189.99</p>
-
-                <div class="producto-descripcion">
-                    <p>Diseñadas para corredores que buscan máximo rendimiento y comodidad. La tecnología de amortiguación reactiva proporciona una pisada suave y un retorno de energía excepcional en cada zancada.</p>
-                    <p>La parte superior de malla transpirable se adapta al pie como una segunda piel, mientras que la suela de goma de alta abrasión ofrece tracción duradera en superficies húmedas y secas.</p>
+                <div class="producto-encabezado">
+                    <p class="producto-categoria">Zapatillas / Lifestyle</p>
+                    <h1 id="producto-titulo">Court Low Essential</h1>
+                    <p class="producto-precio">$129.99</p>
                 </div>
 
-                <fieldset class="producto-talles">
-                    <legend>Talle</legend>
-                    <div class="talles-opciones">
-                        <label>
-                            <input type="radio" name="talle" value="39" />
-                            <span>39</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="talle" value="40" />
-                            <span>40</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="talle" value="41" />
-                            <span>41</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="talle" value="42" />
-                            <span>42</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="talle" value="43" />
-                            <span>43</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="talle" value="44" />
-                            <span>44</span>
-                        </label>
-                    </div>
-                </fieldset>
+                <p class="producto-resumen">Un clásico urbano de perfil bajo, diseñado para acompañarte todos los días con una pisada cómoda y un estilo limpio.</p>
 
-                <button type="button" class="btn-agregar-carrito">Agregar al carrito</button>
+                <form class="producto-compra">
+                    <fieldset class="producto-talles">
+                        <legend>Seleccioná tu talle</legend>
+                        <div class="talles-opciones">
+                            <label>
+                                <input type="radio" name="talle" value="39">
+                                <span>39</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="talle" value="40">
+                                <span>40</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="talle" value="41">
+                                <span>41</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="talle" value="42">
+                                <span>42</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="talle" value="43">
+                                <span>43</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="talle" value="44">
+                                <span>44</span>
+                            </label>
+                        </div>
+                    </fieldset>
 
-                <div class="producto-envio">
-                    <h3>Envío y devoluciones</h3>
+                    <button type="button" class="btn-agregar-carrito">Agregar al carrito</button>
+                </form>
+
+                <div class="producto-servicios">
+                    <section>
+                        <h2>Envío</h2>
+                        <p>Gratis en compras superiores a $100. Entrega estimada de 2 a 5 días hábiles.</p>
+                    </section>
+                    <section>
+                        <h2>Cambios y devoluciones</h2>
+                        <p>Tenés 30 días para devolver tu compra y el primer cambio de talle es sin cargo.</p>
+                    </section>
+                    <section>
+                        <h2>Medios de pago</h2>
+                        <p>Tarjetas de crédito y débito, transferencia bancaria y pago seguro.</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="producto-informacion" aria-labelledby="informacion-titulo">
+            <h2 id="informacion-titulo">Conocé el producto</h2>
+            <div class="producto-informacion-grid">
+                <section>
+                    <h3>Descripción</h3>
+                    <p>Las Court Low Essential reinterpretan la silueta clásica de cancha para el uso cotidiano. Su diseño versátil combina líneas simples, soporte y comodidad duradera.</p>
+                </section>
+                <section>
+                    <h3>Detalles</h3>
                     <ul>
-                        <li>Envío gratis en compras superiores a $100</li>
-                        <li>Entrega en 2-5 días hábiles</li>
-                        <li>Devoluciones gratuitas dentro de 30 días</li>
-                        <li>Cambio de talle sin cargo</li>
+                        <li>Diseño de perfil bajo</li>
+                        <li>Cierre con cordones</li>
+                        <li>Suela de goma con tracción</li>
+                        <li>Color: blanco y negro</li>
                     </ul>
-                </div>
+                </section>
+                <section>
+                    <h3>Materiales y características</h3>
+                    <ul>
+                        <li>Exterior sintético resistente</li>
+                        <li>Forro interior textil</li>
+                        <li>Plantilla acolchada</li>
+                        <li>Costuras reforzadas</li>
+                    </ul>
+                </section>
             </div>
         </section>
     </main>

@@ -35,3 +35,8 @@ Voy a reorganizar la información del producto, mejorar la jerarquía visual,
 dar mayor protagonismo a la imagen, ordenar la selección de talles, precio,
 descripción e información de envío, y mantener una estética moderna,
 minimalista y coherente con el resto de la tienda.
+
+8- Voy a mejorar el encabezado y la navegación general de la tienda utilizando HTML y CSS.
+Voy a unificar el header de las distintas páginas, reorganizando el logo, la navegación principal y los accesos de búsqueda, carrito y usuario.
+También voy a mejorar su adaptación responsive utilizando un enfoque mobile-first, con estilos base para dispositivos móviles, un breakpoint de 768px para tablet y otro de 1024px para desktop.
+Para la distribución y alineación de los elementos voy a utilizar principalmente Flexbox, además de unidades relativas y estados visuales como hover y focus.

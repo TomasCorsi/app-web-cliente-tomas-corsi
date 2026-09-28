@@ -57,3 +57,8 @@ de inicio independiente del catálogo. La página `index.html` funcionará como
 Home de MOVE, mientras que los productos y filtros quedarán organizados en
 `productos.html`. También voy a actualizar la navegación para mantener enlaces
 coherentes entre las distintas páginas.
+
+12- Voy a incorporar animaciones e interacciones visuales sutiles utilizando
+CSS. Aplicaré @keyframes en la entrada del contenido principal, transitions
+y transforms en botones y productos destacados, manteniendo la estética
+minimalista y sin utilizar JavaScript.

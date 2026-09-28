@@ -51,3 +51,9 @@ un enfoque mobile-first. Voy a definir los estilos base para dispositivos
 móviles y utilizar media queries a partir de 768px para tablet y 1024px para
 desktop, adaptando los distintos layouts y componentes para mantener una
 correcta distribución del contenido en todos los tamaños de pantalla.
+
+11- Voy a reorganizar la estructura principal de la tienda creando una página
+de inicio independiente del catálogo. La página `index.html` funcionará como
+Home de MOVE, mientras que los productos y filtros quedarán organizados en
+`productos.html`. También voy a actualizar la navegación para mantener enlaces
+coherentes entre las distintas páginas.

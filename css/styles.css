@@ -422,6 +422,7 @@ main.catalogo-layout {
     margin: 0 auto;
     padding: clamp(2.5rem, 8vw, 4rem) 1.25rem clamp(3.5rem, 10vw, 5rem);
     text-align: center;
+    animation: heroEntrada 0.7s ease-out both;
 }
 
 .home-hero__content h1 {
@@ -448,6 +449,12 @@ main.catalogo-layout {
 
 .home-hero__actions a {
     text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.home-hero__actions a:hover,
+.home-hero__actions a:focus-visible {
+    transform: translateY(-2px);
 }
 
 .home-hero__secondary {
@@ -463,6 +470,12 @@ main.catalogo-layout {
     font-weight: 600;
 }
 
+.home-hero__secondary:hover,
+.home-hero__secondary:focus-visible {
+    color: #fff;
+    background-color: #111;
+}
+
 .home-destacados {
     max-width: 1200px;
     margin: 0 auto;
@@ -473,6 +486,39 @@ main.catalogo-layout {
     display: inline-flex;
     margin-top: 2rem;
     text-decoration: none;
+}
+
+.home-destacados .producto-card:hover img {
+    transform: scale(1.03);
+}
+
+@keyframes heroEntrada {
+    from {
+        opacity: 0;
+        transform: translateY(0.75rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-hero__content {
+        animation: none;
+    }
+
+    .home-hero__actions a,
+    .home-destacados .producto-card img {
+        transition-duration: 0.01ms;
+    }
+
+    .home-hero__actions a:hover,
+    .home-hero__actions a:focus-visible,
+    .home-destacados .producto-card:hover img {
+        transform: none;
+    }
 }
 
 #productos,

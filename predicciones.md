@@ -40,3 +40,8 @@ minimalista y coherente con el resto de la tienda.
 Voy a unificar el header de las distintas páginas y reorganizar el logo,
 la navegación principal y la zona de acciones utilizando Flexbox para
 lograr una distribución más clara, alineada y consistente.
+
+9- Voy a mejorar los accesos visuales del encabezado incorporando iconos
+para búsqueda, carrito y usuario utilizando SVG inline y CSS.
+También voy a agregar estados visuales hover y focus para mejorar la
+interacción y mantener una estética limpia y consistente.

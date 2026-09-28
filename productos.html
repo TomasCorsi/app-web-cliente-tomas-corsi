@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOVE | Indumentaria y calzado deportivo</title>
+    <title>Productos | MOVE</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="pagina-home">
+<body class="pagina-catalogo">
     <header class="site-header">
         <nav class="site-header__nav" aria-label="Navegación principal">
             <a href="index.html" class="site-header__brand" aria-label="Ir al inicio">MOVE</a>
             <ul class="site-header__menu">
-                <li><a href="index.html" aria-current="page">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html" aria-current="page">Productos</a></li>
                 <li><a href="productos.html#filtros">Categorías</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -41,17 +41,50 @@
         </nav>
     </header>
 
-    <main id="inicio" class="pagina-home">
-        <section class="home-destacados" aria-labelledby="destacados-titulo">
+    <main id="inicio" class="catalogo-layout">
+        <aside id="filtros" class="catalogo-filtros">
+            <section aria-labelledby="filtros-titulo">
+                <h2 id="filtros-titulo">Filtrar productos</h2>
+                <form>
+                    <fieldset>
+                        <legend>Categoría</legend>
+                        <label><input type="checkbox" name="categoria" value="zapatillas"> Zapatillas</label>
+                        <label><input type="checkbox" name="categoria" value="remeras"> Remeras</label>
+                        <label><input type="checkbox" name="categoria" value="buzos"> Buzos</label>
+                        <label><input type="checkbox" name="categoria" value="shorts"> Shorts</label>
+                        <label><input type="checkbox" name="categoria" value="accesorios"> Accesorios</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Rango de precio</legend>
+                        <label><input type="radio" name="precio" value="0-100"> Hasta $100</label>
+                        <label><input type="radio" name="precio" value="100-150"> $100 - $150</label>
+                        <label><input type="radio" name="precio" value="150-200"> $150 - $200</label>
+                        <label><input type="radio" name="precio" value="200+"> Más de $200</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Colección</legend>
+                        <label><input type="checkbox" name="coleccion" value="running"> Running</label>
+                        <label><input type="checkbox" name="coleccion" value="training"> Training</label>
+                        <label><input type="checkbox" name="coleccion" value="futbol"> Fútbol</label>
+                        <label><input type="checkbox" name="coleccion" value="lifestyle"> Lifestyle</label>
+                    </fieldset>
+                    <button type="submit">Aplicar filtros</button>
+                    <button type="reset">Limpiar filtros</button>
+                </form>
+            </section>
+        </aside>
+
+        <section id="productos" class="catalogo-productos" aria-labelledby="productos-titulo">
             <div class="catalogo-encabezado">
                 <div>
-                    <p class="catalogo-eyebrow">Selección MOVE</p>
-                    <h1 id="destacados-titulo">Productos destacados</h1>
+                    <p class="catalogo-eyebrow">Nueva temporada</p>
+                    <h1 id="productos-titulo">Equipate para moverte</h1>
                 </div>
+                <p>8 productos</p>
             </div>
 
             <div class="catalogo-grid">
-        <article class="producto-card">
+                <article class="producto-card">
                     <a href="producto.html" class="producto-card-imagen" aria-label="Ver Court Low Essential">
                         <img src="images/156174-800-800.webp" alt="Zapatillas blancas Court Low Essential con detalles negros">
                     </a>
@@ -65,7 +98,7 @@
                     </div>
                 </article>
 
-        <article class="producto-card">
+                <article class="producto-card">
                     <a href="producto.html" class="producto-card-imagen" aria-label="Ver Retro 12 Black Red">
                         <img src="images/1851608-600-600.webp" alt="Zapatillas altas Retro 12 negras con detalles rojos">
                     </a>
@@ -79,7 +112,7 @@
                     </div>
                 </article>
 
-        <article class="producto-card">
+                <article class="producto-card">
                     <a href="producto.html" class="producto-card-imagen" aria-label="Ver Zoom Performance 6">
                         <img src="images/1864876-600-600.webp" alt="Zapatillas Zoom Performance 6 grises y rojas">
                     </a>
@@ -93,7 +126,7 @@
                     </div>
                 </article>
 
-        <article class="producto-card">
+                <article class="producto-card">
                     <a href="producto.html" class="producto-card-imagen" aria-label="Ver Force Low Denim">
                         <img src="images/1875036-600-600.webp" alt="Zapatillas Force Low Denim grises con detalles naranjas">
                     </a>
@@ -107,7 +140,7 @@
                     </div>
                 </article>
 
-        <article class="producto-card">
+                <article class="producto-card">
                     <a href="producto.html" class="producto-card-imagen" aria-label="Ver Camiseta Países Bajos Match">
                         <img src="images/1731116-600-600.jpg" alt="Camiseta naranja Países Bajos Match">
                     </a>
@@ -121,7 +154,7 @@
                     </div>
                 </article>
 
-        <article class="producto-card">
+                <article class="producto-card">
                     <a href="producto.html" class="producto-card-imagen" aria-label="Ver Camiseta Francia Dri-FIT">
                         <img src="images/1732896-600-600.webp" alt="Camiseta Francia Dri-FIT color verde claro">
                     </a>
@@ -134,9 +167,35 @@
                         </div>
                     </div>
                 </article>
-            </div>
 
-            <a href="productos.html" class="home-destacados-enlace producto-card-accion">Ver todos los productos</a>
+                <article class="producto-card">
+                    <a href="producto.html" class="producto-card-imagen" aria-label="Ver Camiseta Racing Club 2026">
+                        <img src="images/1744656-600-600.webp" alt="Camiseta Racing Club 2026 celeste y blanca">
+                    </a>
+                    <div class="producto-card-contenido">
+                        <p class="producto-card-categoria">Remeras / Fútbol</p>
+                        <h2><a href="producto.html">Camiseta Racing Club 2026</a></h2>
+                        <div class="producto-card-compra">
+                            <p class="producto-card-precio">$89.99</p>
+                            <a href="producto.html" class="producto-card-accion">Ver producto</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto-card">
+                    <a href="producto.html" class="producto-card-imagen" aria-label="Ver Remera Brasil Performance">
+                        <img src="images/1799572-600-600.webp" alt="Remera Brasil Performance azul oscuro">
+                    </a>
+                    <div class="producto-card-contenido">
+                        <p class="producto-card-categoria">Remeras / Training</p>
+                        <h2><a href="producto.html">Remera Brasil Performance</a></h2>
+                        <div class="producto-card-compra">
+                            <p class="producto-card-precio">$84.99</p>
+                            <a href="producto.html" class="producto-card-accion">Ver producto</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
 
@@ -192,3 +251,4 @@
     </footer>
 </body>
 </html>
+

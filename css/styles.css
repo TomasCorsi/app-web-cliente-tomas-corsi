@@ -670,6 +670,12 @@ main.catalogo-layout {
     font-weight: 600;
 }
 
+.home-contacto__ayuda {
+    color: var(--color-texto-secundario);
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
 .home-contacto__campo input,
 .home-contacto__campo textarea {
     width: 100%;
@@ -698,6 +704,23 @@ main.catalogo-layout {
 .home-contacto__campo textarea:focus-visible {
     outline: 2px solid var(--color-principal);
     outline-offset: 3px;
+}
+
+.home-contacto__campo input:invalid:focus-visible,
+.home-contacto__campo textarea:invalid:focus-visible {
+    border-width: 2px;
+    border-style: dashed;
+}
+
+.home-contacto__campo input:invalid:focus-visible + .home-contacto__ayuda,
+.home-contacto__campo textarea:invalid:focus-visible + .home-contacto__ayuda {
+    color: var(--color-principal);
+    font-weight: 600;
+}
+
+.home-contacto__campo input:valid:focus-visible,
+.home-contacto__campo textarea:valid:focus-visible {
+    border-style: solid;
 }
 
 .home-contacto__boton {

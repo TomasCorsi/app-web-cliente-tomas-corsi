@@ -551,6 +551,106 @@ main.catalogo-layout {
     margin-top: 1.25rem;
 }
 
+.home-contacto {
+    padding: 0 1.25rem 3.5rem;
+}
+
+.home-contacto__contenido {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2.5rem;
+    padding: 2.5rem 0;
+    border-top: 1px solid #ddd;
+}
+
+.home-contacto__intro h2 {
+    color: #111;
+    font-size: clamp(2.25rem, 9vw, 4.5rem);
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    line-height: 0.95;
+}
+
+.home-contacto__intro > p:not(.catalogo-eyebrow) {
+    max-width: 30rem;
+    margin-top: 1.25rem;
+    color: #555;
+}
+
+.home-contacto__form {
+    display: grid;
+    gap: 1.25rem;
+    max-width: 38rem;
+}
+
+.home-contacto__campo {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.home-contacto__campo label {
+    color: #222;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.home-contacto__campo input,
+.home-contacto__campo textarea {
+    width: 100%;
+    min-height: 48px;
+    padding: 0.75rem 0.85rem;
+    color: #111;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font: inherit;
+    line-height: 1.5;
+}
+
+.home-contacto__campo textarea {
+    min-height: 9rem;
+    resize: vertical;
+}
+
+.home-contacto__campo input:focus,
+.home-contacto__campo textarea:focus {
+    border-color: #111;
+    outline: none;
+}
+
+.home-contacto__campo input:focus-visible,
+.home-contacto__campo textarea:focus-visible {
+    outline: 2px solid #111;
+    outline-offset: 3px;
+}
+
+.home-contacto__boton {
+    width: 100%;
+    min-height: 48px;
+    padding: 0.75rem 1.25rem;
+    color: #fff;
+    background-color: #111;
+    border: 1px solid #111;
+    border-radius: 4px;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.home-contacto__boton:hover,
+.home-contacto__boton:focus-visible {
+    background-color: #333;
+    border-color: #333;
+}
+
+.home-contacto__boton:focus-visible {
+    outline: 2px solid #111;
+    outline-offset: 3px;
+}
+
 @keyframes heroEntrada {
     from {
         opacity: 0;
@@ -1290,6 +1390,21 @@ aside.carrito-resumen {
         border-left: 1px solid #444;
     }
 
+    .home-contacto {
+        padding: 0 1.5rem 5rem;
+    }
+
+    .home-contacto__contenido {
+        grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+        gap: 3rem;
+        padding: 4rem 0;
+    }
+
+    .home-contacto__form {
+        justify-self: end;
+        width: 100%;
+    }
+
     .home-hero__content {
         padding: 3rem 1.5rem 4.5rem;
     }
@@ -1513,6 +1628,16 @@ aside.carrito-resumen {
 
     .home-quienes-somos__texto {
         padding-left: clamp(3rem, 6vw, 5rem);
+    }
+
+    .home-contacto {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .home-contacto__contenido {
+        gap: clamp(4rem, 9vw, 7rem);
+        padding: clamp(4.5rem, 8vw, 6.5rem) 0;
     }
 
     .catalogo-grid {

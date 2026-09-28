@@ -174,9 +174,43 @@
                 </div>
             </div>
         </section>
+
+        <section id="contacto" class="home-contacto" aria-labelledby="contacto-titulo">
+            <div class="home-contacto__contenido">
+                <div class="home-contacto__intro">
+                    <p class="catalogo-eyebrow">Contacto</p>
+                    <h2 id="contacto-titulo">Hablemos</h2>
+                    <p>¿Tenés alguna consulta? Completá el formulario y dejanos tu mensaje.</p>
+                </div>
+
+                <form class="home-contacto__form">
+                    <div class="home-contacto__campo">
+                        <label for="contacto-nombre">Nombre</label>
+                        <input type="text" id="contacto-nombre" name="nombre" autocomplete="name" required>
+                    </div>
+
+                    <div class="home-contacto__campo">
+                        <label for="contacto-email">Email</label>
+                        <input type="email" id="contacto-email" name="email" autocomplete="email" required>
+                    </div>
+
+                    <div class="home-contacto__campo">
+                        <label for="contacto-asunto">Asunto</label>
+                        <input type="text" id="contacto-asunto" name="asunto" required>
+                    </div>
+
+                    <div class="home-contacto__campo">
+                        <label for="contacto-mensaje">Mensaje</label>
+                        <textarea id="contacto-mensaje" name="mensaje" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="home-contacto__boton">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
     </main>
 
-    <footer class="site-footer" id="contacto">
+    <footer class="site-footer">
         <div class="footer-contenido">
             <section class="footer-columna">
                 <h2>Tienda</h2>

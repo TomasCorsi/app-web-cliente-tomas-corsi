@@ -35,3 +35,8 @@ Voy a reorganizar la información del producto, mejorar la jerarquía visual,
 dar mayor protagonismo a la imagen, ordenar la selección de talles, precio,
 descripción e información de envío, y mantener una estética moderna,
 minimalista y coherente con el resto de la tienda.
+
+8- Voy a mejorar la estructura del encabezado de la tienda utilizando HTML y CSS.
+Voy a unificar el header de las distintas páginas y reorganizar el logo,
+la navegación principal y la zona de acciones utilizando Flexbox para
+lograr una distribución más clara, alineada y consistente.

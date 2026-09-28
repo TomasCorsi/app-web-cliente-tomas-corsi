@@ -78,3 +78,7 @@ sin utilizar JavaScript.
 reutilizar colores, bordes, radios, sombras, anchos máximos y transiciones
 repetidas. El objetivo es mejorar la organización y mantenibilidad de los
 estilos sin modificar la apariencia actual del sitio.
+
+16- Voy a incorporar un buscador visible y semántico en el catálogo utilizando
+HTML y CSS. El formulario tendrá un campo de búsqueda y un botón, será
+responsive y accesible, y funcionará mediante GET sin utilizar JavaScript.

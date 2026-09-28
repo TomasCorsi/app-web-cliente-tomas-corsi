@@ -62,3 +62,8 @@ coherentes entre las distintas páginas.
 CSS. Aplicaré @keyframes en la entrada del contenido principal, transitions
 y transforms en botones y productos destacados, manteniendo la estética
 minimalista y sin utilizar JavaScript.
+
+13- Voy a agregar una sección "Quiénes somos" en la página de inicio para
+presentar brevemente la identidad y propuesta de MOVE. La sección mantendrá
+la estética minimalista del sitio y se adaptará al diseño responsive existente
+utilizando únicamente HTML y CSS.

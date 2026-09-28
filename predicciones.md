@@ -67,3 +67,9 @@ minimalista y sin utilizar JavaScript.
 presentar brevemente la identidad y propuesta de MOVE. La sección mantendrá
 la estética minimalista del sitio y se adaptará al diseño responsive existente
 utilizando únicamente HTML y CSS.
+
+14- Voy a agregar un formulario de contacto en la página de inicio para que
+el usuario pueda completar sus datos y escribir una consulta. Voy a utilizar
+elementos semánticos de formularios HTML, labels asociados a cada campo,
+validaciones nativas y estilos responsive, manteniendo la estética de MOVE
+sin utilizar JavaScript.

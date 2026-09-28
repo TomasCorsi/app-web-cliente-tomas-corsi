@@ -492,6 +492,65 @@ main.catalogo-layout {
     transform: scale(1.03);
 }
 
+.home-quienes-somos {
+    padding: 0 1.25rem 3.5rem;
+}
+
+.home-quienes-somos__contenido {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: #111;
+    color: #fff;
+}
+
+.home-quienes-somos__intro {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #444;
+}
+
+.home-quienes-somos .catalogo-eyebrow {
+    color: #bdbdbd;
+}
+
+.home-quienes-somos h2 {
+    margin-bottom: 1.25rem;
+    color: #bdbdbd;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.home-quienes-somos h3 {
+    max-width: 9ch;
+    font-size: clamp(2.25rem, 10vw, 4.5rem);
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    line-height: 0.95;
+}
+
+.home-quienes-somos__texto {
+    max-width: 38rem;
+    padding-top: 2rem;
+    color: #d1d1d1;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.home-quienes-somos__texto p:first-child {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.home-quienes-somos__texto p + p {
+    margin-top: 1.25rem;
+}
+
 @keyframes heroEntrada {
     from {
         opacity: 0;
@@ -523,7 +582,8 @@ main.catalogo-layout {
 
 #productos,
 #filtros,
-#contacto {
+#contacto,
+#quienes-somos {
     scroll-margin-top: 100px;
 }
 
@@ -1210,6 +1270,26 @@ aside.carrito-resumen {
         padding: 3rem 1.5rem 5rem;
     }
 
+    .home-quienes-somos {
+        padding: 0 1.5rem 5rem;
+    }
+
+    .home-quienes-somos__contenido {
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+        gap: 3rem;
+        padding: 4rem;
+    }
+
+    .home-quienes-somos__intro {
+        padding: 0;
+        border: 0;
+    }
+
+    .home-quienes-somos__texto {
+        padding: 0 0 0 3rem;
+        border-left: 1px solid #444;
+    }
+
     .home-hero__content {
         padding: 3rem 1.5rem 4.5rem;
     }
@@ -1419,6 +1499,20 @@ aside.carrito-resumen {
 
     .home-hero__content {
         padding: 4rem 2rem 5rem;
+    }
+
+    .home-quienes-somos {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .home-quienes-somos__contenido {
+        gap: clamp(4rem, 9vw, 7rem);
+        padding: clamp(4.5rem, 8vw, 6.5rem);
+    }
+
+    .home-quienes-somos__texto {
+        padding-left: clamp(3rem, 6vw, 5rem);
     }
 
     .catalogo-grid {

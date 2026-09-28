@@ -82,3 +82,7 @@ estilos sin modificar la apariencia actual del sitio.
 16- Voy a incorporar un buscador visible y semántico en el catálogo utilizando
 HTML y CSS. El formulario tendrá un campo de búsqueda y un botón, será
 responsive y accesible, y funcionará mediante GET sin utilizar JavaScript.
+
+17- Voy a mejorar las validaciones nativas de los formularios utilizando
+atributos HTML como `required`, `minlength`, `maxlength`, `pattern` y ayudas
+accesibles asociadas a los campos, sin utilizar JavaScript.

@@ -186,22 +186,60 @@
                 <form class="home-contacto__form">
                     <div class="home-contacto__campo">
                         <label for="contacto-nombre">Nombre</label>
-                        <input type="text" id="contacto-nombre" name="nombre" autocomplete="name" required>
+                        <input
+                            type="text"
+                            id="contacto-nombre"
+                            name="nombre"
+                            autocomplete="name"
+                            minlength="2"
+                            maxlength="50"
+                            pattern="[A-Za-zÁÉÍÓÚáéíóúÜüÑñ'’ \-]+"
+                            aria-describedby="contacto-nombre-ayuda"
+                            required
+                        >
+                        <small id="contacto-nombre-ayuda" class="home-contacto__ayuda">Usá entre 2 y 50 caracteres: letras, espacios, apóstrofes o guiones.</small>
                     </div>
 
                     <div class="home-contacto__campo">
                         <label for="contacto-email">Email</label>
-                        <input type="email" id="contacto-email" name="email" autocomplete="email" required>
+                        <input
+                            type="email"
+                            id="contacto-email"
+                            name="email"
+                            autocomplete="email"
+                            maxlength="120"
+                            aria-describedby="contacto-email-ayuda"
+                            required
+                        >
+                        <small id="contacto-email-ayuda" class="home-contacto__ayuda">Ingresá un email válido de hasta 120 caracteres.</small>
                     </div>
 
                     <div class="home-contacto__campo">
                         <label for="contacto-asunto">Asunto</label>
-                        <input type="text" id="contacto-asunto" name="asunto" required>
+                        <input
+                            type="text"
+                            id="contacto-asunto"
+                            name="asunto"
+                            minlength="3"
+                            maxlength="80"
+                            aria-describedby="contacto-asunto-ayuda"
+                            required
+                        >
+                        <small id="contacto-asunto-ayuda" class="home-contacto__ayuda">Escribí un asunto de entre 3 y 80 caracteres.</small>
                     </div>
 
                     <div class="home-contacto__campo">
                         <label for="contacto-mensaje">Mensaje</label>
-                        <textarea id="contacto-mensaje" name="mensaje" rows="6" required></textarea>
+                        <textarea
+                            id="contacto-mensaje"
+                            name="mensaje"
+                            rows="6"
+                            minlength="10"
+                            maxlength="500"
+                            aria-describedby="contacto-mensaje-ayuda"
+                            required
+                        ></textarea>
+                        <small id="contacto-mensaje-ayuda" class="home-contacto__ayuda">Escribí un mensaje de entre 10 y 500 caracteres.</small>
                     </div>
 
                     <button type="submit" class="home-contacto__boton">Enviar mensaje</button>

@@ -73,3 +73,8 @@ el usuario pueda completar sus datos y escribir una consulta. Voy a utilizar
 elementos semánticos de formularios HTML, labels asociados a cada campo,
 validaciones nativas y estilos responsive, manteniendo la estética de MOVE
 sin utilizar JavaScript.
+
+15- Voy a incorporar variables CSS mediante custom properties en `:root` para
+reutilizar colores, bordes, radios, sombras, anchos máximos y transiciones
+repetidas. El objetivo es mejorar la organización y mantenibilidad de los
+estilos sin modificar la apariencia actual del sitio.

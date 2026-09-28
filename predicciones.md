@@ -45,3 +45,9 @@ lograr una distribución más clara, alineada y consistente.
 para búsqueda, carrito y usuario utilizando SVG inline y CSS.
 También voy a agregar estados visuales hover y focus para mejorar la
 interacción y mantener una estética limpia y consistente.
+
+10- Voy a mejorar el comportamiento responsive general de la tienda utilizando
+un enfoque mobile-first. Voy a definir los estilos base para dispositivos
+móviles y utilizar media queries a partir de 768px para tablet y 1024px para
+desktop, adaptando los distintos layouts y componentes para mantener una
+correcta distribución del contenido en todos los tamaños de pantalla.
